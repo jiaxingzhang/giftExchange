@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<!--
+Multiverse by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>2020 MIT Christmas Gift Exchange</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <script type="text/javascript">
+        </script>
+    </head>
+    
+    <body class="is-preload">
+        <!-- Wrapper -->
+        <div id="wrapper">
+            <!-- Header -->
+            <header id="header">
+                <h1><a><strong>2020 Christmas Gift Exchange</strong> by Anitoch ISM</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#footer" class="icon solid fa-info-circle">Instructions</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <!-- Main -->
+            <div id="main">
+            </div>
+            
+            <!-- Footer -->
+            <footer id="footer" class="panel">
+                <div class="inner split">
+                    <div>
+                        <section>
+                            <h2>Instructions!</h2>
+                            <p>1. Scroll through the gallery to find something that catches your eyes. If nothing catches your fancy, challenge someone!</p>
+                            <p>2. Click on the picture, no going back!</p>
+                            <p>3. The picture that shows up is the gift you will receive</p>
+                            <p>4. Merry Christmas!~</p>
+                        </section>
+                    </div>
+                    <div>
+                        <section>
+                            <div class="tenor-gif-embed" data-postid="8216806" data-share-method="host" data-width="100%" data-aspect-ratio="1.6711409395973154"><a href="https://tenor.com/view/joyful-gif-8216806">Joyful GIF</a> from <a href="https://tenor.com/search/joyful-gifs">Joyful GIFs</a></div>
+                            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                        </section>
+                    </div>
+                </div>
+            </footer>
+            
+        </div>
+        
+        <script>
+            function validateEmail(email) {
+                var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(email);
+            }
+        
+        var thumbnailDict = {};
+        thumbnailDict["WG"] = "WG.jpg";
+        thumbnailDict["TL"] = "TL.gif";
+        <!-- thumbnailDict["TH"] = "TH.jpg"; -->
+        thumbnailDict["AH"] = "AH.jpg";
+        thumbnailDict["WB"] = "WB.jpg";
+        thumbnailDict["PDU"] = "PDU.jpg";
+        thumbnailDict["OH"] = "OH.png";
+        thumbnailDict["JL"] = "JL.gif";
+        thumbnailDict["HD"] = "HD.jpg";
+        thumbnailDict["HH"] = "HH.jpg";
+        thumbnailDict["SJ"] = "SJ.jpg";
+        thumbnailDict["JJ"] = "JJ.png";
+        thumbnailDict["DH"] = "DH.png";
+        thumbnailDict["UN"] = "UN.gif";
+        thumbnailDict["KL"] = "KL.jpg";
+        thumbnailDict["JY"] = "JY.jpg";
+        thumbnailDict["PC"] = "PC.jpg";
+        <!-- thumbnailDict["KT"] = "KT.png"; -->
+        <!-- thumbnailDict["HD2"] = "HD2.jpg"; -->
+        <!-- thumbnailDict["OH2"] = "OH2.png"; -->
+        
+        var fullDict = {};
+        fullDict["WG"] = "WG.png";
+        fullDict["TL"] = "TL.png";
+        fullDict["TH"] = "TH.jpg";
+        fullDict["AH"] = "AH.jpg";
+        fullDict["WB"] = "WB.png";
+        fullDict["PDU"] = "PDU.jpg";
+        fullDict["OH"] = "OH.jpg";
+        fullDict["JL"] = "JL.png";
+        fullDict["HD"] = "HD.png";
+        fullDict["HH"] = "HH.jpg";
+        fullDict["SJ"] = "SJ.jpg";
+        fullDict["JJ"] = "JJ.png";
+        fullDict["DH"] = "DH.png";
+        fullDict["UN"] = "UN.png";
+        fullDict["KL"] = "KL.jpg";
+        fullDict["JY"] = "JY.jpg";
+        fullDict["PC"] = "PC.jpg";
+        fullDict["KT"] = "KT.png";
+        fullDict["HD2"] = "HD2.jpg";
+        fullDict["OH2"] = "OH2.png";
+        
+        var captionDict = {};
+        captionDict["WG"] = "Just roll with it";
+        captionDict["TL"] = "Roomba Cat!";
+        captionDict["TH"] = "these ginger bread cookies are as tasty as the gift behind them";
+        captionDict["AH"] = "Christmas dino";
+        captionDict["WB"] = "Feeling of freedom";
+        captionDict["PDU"] = "Christmas to take with you";
+        captionDict["OH"] = "MIT Style!";
+        captionDict["JL"] = "Hulk smash your grades";
+        captionDict["HD"] = "My Dream House";
+        captionDict["HH"] = "Star";
+        captionDict["SJ"] = "My face when I'm done with GIRs";
+        captionDict["JJ"] = "The night beaver Christmas";
+        captionDict["DH"] = "An excellent wrapping job that may or may not have been done by my mother";
+        captionDict["UN"] = "Missing and thinking of everyone";
+        captionDict["KL"] = "Things I used to do for Christmas";
+        captionDict["JY"] = "You've heard of elf on the shelf, now get ready for...";
+        captionDict["PC"] = "Hot cocoa is best on a cold winter day!";
+        captionDict["KT"] = "Meowy Christmas";
+        captionDict["HD2"] = "Stay warm";
+        captionDict["OH2"] = "Lots of newspapers";
+        
+        var descDict = {};
+        descDict["WG"] = "Wireless charger (Wilson)";
+        descDict["TL"] = "24-hr planner (Tiff)";
+        descDict["TH"] = "Hot Cocoa (Tinah)";
+        descDict["AH"] = "Memory foam seat cushion (Arthur)";
+        descDict["WB"] = "Humidifier (Wesley)";
+        descDict["PDU"] = "Rice cooker (P. Dave)";
+        descDict["OH"] = "Tilemate 2020 (Orton)";
+        descDict["JL"] = "Caffeine pills (John)";
+        descDict["HD"] = "Bluetooth earbuds (Hen)";
+        descDict["HH"] = "Touch LED Lamp (Helen)";
+        descDict["SJ"] = "Mug warmer (Stacia)";
+        descDict["JJ"] = "Plasma lighter and flashlight (Jadorian)";
+        descDict["DH"] = "Einstein money bank (David He)";
+        descDict["UN"] = "Sriracha (Uyen)";
+        descDict["KL"] = "Cookies (Karen)";
+        descDict["JY"] = "Action Figures (Jasmine)";
+        descDict["PC"] = "Flexi-cubus wooden puzzle (Trishy)";
+        descDict["KT"] = "Peace on Earth mug (Kevin)";
+        descDict["HD2"] = "Wireless mouse (Extra)";
+        descDict["OH2"] = "Glass water bottle (Extra)";
+        
+        function updateThumbs(){
+            var $main = $('#main');
+            
+            // Thumbs.
+            $main.children('.thumb').each(function() {
+                
+                var	$this = $(this),
+                $image = $this.find('.image'),
+                $image_img = $image.children('img'),
+                x;
+                
+                // No image? Bail.
+                if ($image.length == 0)
+                return;
+                
+                // Image.
+                // This sets the background of the "image" <span> to the image pointed to by its child
+                // <img> (which is then hidden). Gives us way more flexibility.
+                
+                // Set background.
+                $image.css('background-image', 'url(' + $image_img.attr('src') + ')');
+                
+                // Set background position
+                if (x = $image_img.data('position'))
+                $image.css('background-position', x);
+                
+                // Hide original img.
+                $image_img.hide();
+            });
+            
+        }
+        
+        function submit(element){
+            
+            var elId = element.id;
+            var name = elId.substring(0, elId.length-4);
+            element.src = "images/fulls/" + fullDict[name];
+            
+            updateThumbs();
+            updateGiftTracker();
+        }
+        
+        function download(filename, text) {
+            var element = document.createElement('a');
+            element.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent(text));
+            element.setAttribute('download', filename);
+            
+            element.style.display = 'none';
+            document.body.appendChild(element);
+            
+            element.click();
+            
+            document.body.removeChild(element);
+        }
+        
+        function updateGiftTracker() {
+            var recipientDict = {};
+            for (name in thumbnailDict) {
+                var inputVal = document.getElementById(name+"_INP").value;
+                recipientDict[name] = inputVal;
+            }
+            a=1;
+            
+            let csvContent = "";
+            csvContent += "Gifter, Gift, Receiver\r\n";
+            for (name in recipientDict) {
+                csvContent += (name + "," + descDict[name] + "," + recipientDict[name] + "\r\n");
+            }
+            
+            download("giftTracker.csv", csvContent);
+        }
+        
+        for (name in thumbnailDict) {
+            var divNode = document.createElement("div");
+            divNode.setAttribute("class", "item");
+            
+            var articleNode = document.createElement("article");
+            articleNode.setAttribute("class", "thumb");
+            divNode.appendChild(articleNode);
+            
+            var aNode = document.createElement("a");
+            aNode.setAttribute("href","images/fulls/" + fullDict[name]);
+            aNode.setAttribute("class","image");
+            articleNode.appendChild(aNode);
+            
+            var imgNode = document.createElement("img");
+            imgNode.setAttribute("src","images/thumbs/" + thumbnailDict[name]);
+            imgNode.setAttribute("id", name+"_IMG");
+            imgNode.setAttribute("alt", "");
+            aNode.appendChild(imgNode);
+            
+            var h2Node = document.createElement("h2");
+            articleNode.appendChild(h2Node);
+            
+            var textNode1 = document.createTextNode(captionDict[name]);
+            h2Node.appendChild(textNode1);
+            
+            var pNode = document.createElement("p");
+            articleNode.appendChild(pNode);
+            
+            var textNode2 = document.createTextNode(descDict[name]);
+            pNode.appendChild(textNode2);
+            
+            var formNode = document.createElement("form");
+            formNode.setAttribute("action", "javascript:submit("+ name + "_IMG)");
+            formNode.setAttribute("name", "basicForm");
+            divNode.appendChild(formNode);
+            
+            var p1Node = document.createElement("p1");
+            formNode.appendChild(p1Node);
+            
+            var textNode3 = document.createTextNode("CLAIM YOUR GIFT");
+            p1Node.appendChild(textNode3);
+            
+            var inputNode = document.createElement("input");
+            inputNode.setAttribute("type", "text");
+            inputNode.setAttribute("name", name);
+            inputNode.setAttribute("id", name+"_INP");
+            inputNode.setAttribute("placeholder", "NAME");
+            formNode.appendChild(inputNode);
+            
+            var buttonNode = document.createElement("button");
+            formNode.appendChild(buttonNode);
+            
+            var textNode4 = document.createTextNode("Submit");
+            buttonNode.appendChild(textNode4);
+            
+            document.getElementById("main").appendChild(divNode);
+            
+        }
+        updateThumbs();
+        
+        </script>
+        
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.poptrox.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        
+    </body>
+</html>
